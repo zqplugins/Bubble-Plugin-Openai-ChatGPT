@@ -1,0 +1,162 @@
+{
+    "auth": "private_key_header",
+    "calls": {
+        "AAn": {
+            "body": "{\n    \"model\": \"<Model>\",\n    \"prompt\": \"<Prompt>\",\n    \"temperature\": <temperature>,\n    \"max_tokens\": <max_tokens>,\n    \"top_p\": <top_p>,\n    \"frequency_penalty\": <frequency_penalty>,\n    \"presence_penalty\": <presence_penalty>\n}",
+            "body_params": {
+                "AAv": {
+                    "key": "temperature",
+                    "private": true,
+                    "value": "0.7"
+                },
+                "AAw": {
+                    "key": "max_tokens",
+                    "private": true,
+                    "value": "256"
+                },
+                "AAx": {
+                    "key": "top_p",
+                    "private": true,
+                    "value": "0"
+                },
+                "AAy": {
+                    "key": "frequency_penalty",
+                    "private": true,
+                    "value": "0"
+                },
+                "AAz": {
+                    "key": "presence_penalty",
+                    "private": true,
+                    "value": "0"
+                },
+                "ACc": {
+                    "key": "Prompt",
+                    "private": true,
+                    "value": "Please tell me some story"
+                },
+                "ACh": {
+                    "doc": "Enter Model name ex. text-davinci-003",
+                    "key": "Model",
+                    "private": true,
+                    "value": "text-davinci-003"
+                }
+            },
+            "doc_link": "https://beta.openai.com/docs/api-reference/completions",
+            "initialized": true,
+            "method": "post",
+            "name": "Generate Completion",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1671018095169x721212285925982200.plugin_api.AAn",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AAn\":{\"caption\":\"Generate Completion\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"cmpl-6VKZEVI1AYdThiD53TOsYWyGXHP4I\",\"path\":[\"id\"]},\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"sample_value\":\"text_completion\",\"path\":[\"object\"]},\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1672925248,\"path\":[\"created\"]},\"_p_model\":{\"ret_value\":\"text\",\"caption\":\"model\",\"sample_value\":\"text-davinci-003\",\"path\":[\"model\"]},\"_p_choices\":{\"ret_value\":\"list.api.1671018095169x721212285925982200.plugin_api.AAn.choices\",\"caption\":\"choices\",\"path\":[\"choices\"]},\"_p_usage.prompt_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage prompt_tokens\",\"sample_value\":57,\"path\":[\"usage\",\"prompt_tokens\"]},\"_p_usage.completion_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage completion_tokens\",\"sample_value\":212,\"path\":[\"usage\",\"completion_tokens\"]},\"_p_usage.total_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage total_tokens\",\"sample_value\":269,\"path\":[\"usage\",\"total_tokens\"]}}},\"plugin_api.AAn.choices\":{\"caption\":\"Generate Completion choice\",\"fields\":{\"_p_text\":{\"ret_value\":\"text\",\"caption\":\"text\",\"sample_value\":\"\\n\\nDear [Name],\\n\\nWe are pleased to submit our proposal in response to your request for proposals (RFP) for the installation of Artsify Displays in shopping malls, airports, public transport hubs, and other locations.\\n\\nAt Artsify, we understand the importance of providing a platform for artists, photographers, digital artists, and NFT makers to showcase their works. Our displays are designed to provide a unique and engaging experience for viewers, while also providing a platform for artists to showcase their works.\\n\\nOur displays are designed to be easy to install and maintain, and are available in a variety of sizes and configurations. We also offer a range of customization options, allowing you to tailor the displays to your specific needs.\\n\\nWe are confident that our displays will provide an excellent platform for artists to showcase their works, and will be a great addition to your locations. We look forward to hearing from you and discussing how we can work together to make this project a success.\\n\\nSincerely,\\n\\n[Your Name]\",\"path\":[\"text\"]},\"_p_index\":{\"ret_value\":\"number\",\"caption\":\"index\",\"sample_value\":0,\"path\":[\"index\"]},\"_p_logprobs\":{\"ret_value\":\"text\",\"caption\":\"logprobs\",\"sample_value\":null,\"path\":[\"logprobs\"]},\"_p_finish_reason\":{\"ret_value\":\"text\",\"caption\":\"finish_reason\",\"sample_value\":\"stop\",\"path\":[\"finish_reason\"]}}}}",
+            "url": "https://api.openai.com/v1/completions"
+        },
+        "ABC": {
+            "body": "{\n    \"prompt\": \"<Describe Image>\",\n    \"n\": <Number of Images>,\n    \"size\": \"<Image Resolution>\"\n}",
+            "body_params": {
+                "AER": {
+                    "key": "Describe Image",
+                    "private": true,
+                    "value": "cat"
+                },
+                "AES": {
+                    "key": "Number of Images",
+                    "private": true,
+                    "value": "1"
+                },
+                "AET": {
+                    "doc": "Enter resolution for image ex:256*256, 512x512, 1024x1024",
+                    "key": "Image Resolution",
+                    "private": true,
+                    "value": "256x256"
+                }
+            },
+            "body_type": "json",
+            "doc_link": "https://beta.openai.com/docs/guides/images/usage",
+            "initialized": true,
+            "method": "post",
+            "name": "Generate Image",
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1671018095169x721212285925982200.plugin_api.ABC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABC\":{\"caption\":\"Generate Image\",\"fields\":{\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1672946420,\"path\":[\"created\"]},\"_p_data\":{\"ret_value\":\"list.api.1671018095169x721212285925982200.plugin_api.ABC.data\",\"caption\":\"data\",\"path\":[\"data\"]}}},\"plugin_api.ABC.data\":{\"caption\":\"Generate Image data\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://oaidalleapiprodscus.blob.core.windows.net/private/org-rxkDFgk5OMzk6TX643pFxKy8/user-e0Gqx63Z1CmJLT81vC9RpEVJ/img-rwtu8Da4EbFw5TL1cZ6khXuT.png?st=2023-01-05T18%3A20%3A20Z&se=2023-01-05T20%3A20%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-01-05T15%3A07%3A23Z&ske=2023-01-06T15%3A07%3A23Z&sks=b&skv=2021-08-06&sig=BIg4CodmUAPz9YYlJUL3RJ9gTR3UiTjMybdifnP%2BaJ4%3D\",\"path\":[\"url\"]}}}}",
+            "url": "https://api.openai.com/v1/images/generations"
+        },
+        "ACb": {
+            "doc_link": "https://beta.openai.com/docs/api-reference/models",
+            "initialized": true,
+            "method": "get",
+            "name": "Get Models",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1671018095169x721212285925982200.plugin_api.ACb",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACb\":{\"caption\":\"Get Model\",\"fields\":{\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"sample_value\":\"list\",\"path\":[\"object\"]},\"_p_data\":{\"ret_value\":\"list.api.1671018095169x721212285925982200.plugin_api.ACb.data\",\"caption\":\"data\",\"path\":[\"data\"]}}},\"plugin_api.ACb.data\":{\"caption\":\"Get Models data\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"babbage\",\"path\":[\"id\"]},\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"sample_value\":\"model\",\"path\":[\"object\"]},\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1649358449,\"path\":[\"created\"]},\"_p_owned_by\":{\"ret_value\":\"text\",\"caption\":\"owned_by\",\"sample_value\":\"openai\",\"path\":[\"owned_by\"]},\"_p_permission\":{\"ret_value\":\"list.api.1671018095169x721212285925982200.plugin_api.ACb.permission\",\"caption\":\"permission\",\"path\":[\"permission\"]},\"_p_root\":{\"ret_value\":\"text\",\"caption\":\"root\",\"sample_value\":\"babbage\",\"path\":[\"root\"]},\"_p_parent\":{\"ret_value\":\"text\",\"caption\":\"parent\",\"sample_value\":null,\"path\":[\"parent\"]}}},\"plugin_api.ACb.permission\":{\"caption\":\"Get Models permission\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"modelperm-49FUp5v084tBB49tC4z8LPH5\",\"path\":[\"id\"]},\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"sample_value\":\"model_permission\",\"path\":[\"object\"]},\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1669085501,\"path\":[\"created\"]},\"_p_allow_create_engine\":{\"ret_value\":\"boolean\",\"caption\":\"allow_create_engine\",\"sample_value\":false,\"path\":[\"allow_create_engine\"]},\"_p_allow_sampling\":{\"ret_value\":\"boolean\",\"caption\":\"allow_sampling\",\"sample_value\":true,\"path\":[\"allow_sampling\"]},\"_p_allow_logprobs\":{\"ret_value\":\"boolean\",\"caption\":\"allow_logprobs\",\"sample_value\":true,\"path\":[\"allow_logprobs\"]},\"_p_allow_search_indices\":{\"ret_value\":\"boolean\",\"caption\":\"allow_search_indices\",\"sample_value\":false,\"path\":[\"allow_search_indices\"]},\"_p_allow_view\":{\"ret_value\":\"boolean\",\"caption\":\"allow_view\",\"sample_value\":true,\"path\":[\"allow_view\"]},\"_p_allow_fine_tuning\":{\"ret_value\":\"boolean\",\"caption\":\"allow_fine_tuning\",\"sample_value\":false,\"path\":[\"allow_fine_tuning\"]},\"_p_organization\":{\"ret_value\":\"text\",\"caption\":\"organization\",\"sample_value\":\"*\",\"path\":[\"organization\"]},\"_p_group\":{\"ret_value\":\"text\",\"caption\":\"group\",\"sample_value\":null,\"path\":[\"group\"]},\"_p_is_blocking\":{\"ret_value\":\"boolean\",\"caption\":\"is_blocking\",\"sample_value\":false,\"path\":[\"is_blocking\"]}}}}",
+            "url": "https://api.openai.com/v1/models"
+        },
+        "ADc": {
+            "body": "{\n    \"model\": \"<Model>\",\n    \"input\": \"<Input>\",\n    \"instruction\": \"<Instruction>\"\n}",
+            "body_params": {
+                "ADo": {
+                    "doc": "Enter Text for editing",
+                    "key": "Input",
+                    "private": true,
+                    "value": "What day of the wek is it?"
+                },
+                "ADt": {
+                    "doc": "Enter model name ex. code-davinci-edit-001",
+                    "key": "Model",
+                    "private": true,
+                    "value": "text-davinci-edit-001"
+                },
+                "AEE": {
+                    "key": "Instruction",
+                    "private": true,
+                    "value": "Fix the spelling mistakes"
+                }
+            },
+            "doc_link": "https://beta.openai.com/docs/api-reference/edits/create",
+            "initialized": true,
+            "method": "post",
+            "name": "Edit Text",
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1671018095169x721212285925982200.plugin_api.ADc",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ADc\":{\"caption\":\"cURL Call\",\"fields\":{\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"sample_value\":\"edit\",\"path\":[\"object\"]},\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1672826647,\"path\":[\"created\"]},\"_p_choices\":{\"ret_value\":\"list.api.1671018095169x721212285925982200.plugin_api.ADc.choices\",\"caption\":\"choices\",\"path\":[\"choices\"]},\"_p_usage.prompt_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage prompt_tokens\",\"sample_value\":22,\"path\":[\"usage\",\"prompt_tokens\"]},\"_p_usage.completion_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage completion_tokens\",\"sample_value\":23,\"path\":[\"usage\",\"completion_tokens\"]},\"_p_usage.total_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage total_tokens\",\"sample_value\":45,\"path\":[\"usage\",\"total_tokens\"]}}},\"plugin_api.ADc.choices\":{\"caption\":\"cURL Call choice\",\"fields\":{\"_p_text\":{\"ret_value\":\"text\",\"caption\":\"text\",\"sample_value\":\"How much is the fish?\\n\",\"path\":[\"text\"]},\"_p_index\":{\"ret_value\":\"number\",\"caption\":\"index\",\"sample_value\":0,\"path\":[\"index\"]}}}}",
+            "url": "https://api.openai.com/v1/edits"
+        },
+        "AEF": {
+            "body": "{\n    \"input\": \"<Input>\"\n}",
+            "body_params": {
+                "AEK": {
+                    "doc": "Enter text for moderation",
+                    "key": "Input",
+                    "private": true,
+                    "value": "I want to kill them."
+                }
+            },
+            "doc_link": "https://beta.openai.com/docs/api-reference/moderations",
+            "initialized": true,
+            "method": "post",
+            "name": "Moderation Text",
+            "publish_as": "action",
+            "rank": 4,
+            "ret_value": "api.1671018095169x721212285925982200.plugin_api.AEF",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AEF\":{\"caption\":\"Moderation Text\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"modr-6UuzMDzvMvnWlkDvqEG6XnXt1cVeA\",\"path\":[\"id\"]},\"_p_model\":{\"ret_value\":\"text\",\"caption\":\"model\",\"sample_value\":\"text-moderation-004\",\"path\":[\"model\"]},\"_p_results\":{\"ret_value\":\"list.api.1671018095169x721212285925982200.plugin_api.AEF.results\",\"caption\":\"results\",\"path\":[\"results\"]}}},\"plugin_api.AEF.results\":{\"caption\":\"Moderation Text result\",\"fields\":{\"_p_categories.hate\":{\"ret_value\":\"boolean\",\"caption\":\"categories hate\",\"sample_value\":false,\"path\":[\"categories\",\"hate\"]},\"_p_categories.hate/threatening\":{\"ret_value\":\"boolean\",\"caption\":\"categories hate/threatening\",\"sample_value\":false,\"path\":[\"categories\",\"hate/threatening\"]},\"_p_categories.self-harm\":{\"ret_value\":\"boolean\",\"caption\":\"categories self-harm\",\"sample_value\":false,\"path\":[\"categories\",\"self-harm\"]},\"_p_categories.sexual\":{\"ret_value\":\"boolean\",\"caption\":\"categories sexual\",\"sample_value\":false,\"path\":[\"categories\",\"sexual\"]},\"_p_categories.sexual/minors\":{\"ret_value\":\"boolean\",\"caption\":\"categories sexual/minors\",\"sample_value\":false,\"path\":[\"categories\",\"sexual/minors\"]},\"_p_categories.violence\":{\"ret_value\":\"boolean\",\"caption\":\"categories violence\",\"sample_value\":true,\"path\":[\"categories\",\"violence\"]},\"_p_categories.violence/graphic\":{\"ret_value\":\"boolean\",\"caption\":\"categories violence/graphic\",\"sample_value\":false,\"path\":[\"categories\",\"violence/graphic\"]},\"_p_category_scores.hate\":{\"ret_value\":\"number\",\"caption\":\"category_scores hate\",\"sample_value\":0.18252533674240112,\"path\":[\"category_scores\",\"hate\"]},\"_p_category_scores.hate/threatening\":{\"ret_value\":\"number\",\"caption\":\"category_scores hate/threatening\",\"sample_value\":0.0032941880635917187,\"path\":[\"category_scores\",\"hate/threatening\"]},\"_p_category_scores.self-harm\":{\"ret_value\":\"number\",\"caption\":\"category_scores self-harm\",\"sample_value\":1.9077321944394043e-9,\"path\":[\"category_scores\",\"self-harm\"]},\"_p_category_scores.sexual\":{\"ret_value\":\"number\",\"caption\":\"category_scores sexual\",\"sample_value\":9.69763732427964e-7,\"path\":[\"category_scores\",\"sexual\"]},\"_p_category_scores.sexual/minors\":{\"ret_value\":\"number\",\"caption\":\"category_scores sexual/minors\",\"sample_value\":1.3826513267645169e-8,\"path\":[\"category_scores\",\"sexual/minors\"]},\"_p_category_scores.violence\":{\"ret_value\":\"number\",\"caption\":\"category_scores violence\",\"sample_value\":0.8871539235115051,\"path\":[\"category_scores\",\"violence\"]},\"_p_category_scores.violence/graphic\":{\"ret_value\":\"number\",\"caption\":\"category_scores violence/graphic\",\"sample_value\":3.196241493697016e-8,\"path\":[\"category_scores\",\"violence/graphic\"]},\"_p_flagged\":{\"ret_value\":\"boolean\",\"caption\":\"flagged\",\"sample_value\":true,\"path\":[\"flagged\"]}}}}",
+            "url": "https://api.openai.com/v1/moderations"
+        }
+    },
+    "human": "Ez OpenAI",
+    "shared_headers": {
+        "AAC": {
+            "key": "Content-Type",
+            "private": true,
+            "value": "application/json",
+            "visibility": "hidden"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "categories": {
+        "0": "analytics",
+        "1": "productivity",
+        "2": "compliance",
+        "3": "internationalization",
+        "4": "artificial intelligence (AI)"
+    },
+    "demo_page": "https://ezcodedemo2.bubbleapps.io/version-test/openai",
+    "description": "🔔 This is a free version of our powerful Full OpenAI GPT-4 plugin - get more functionality to implement any idea.\nThis lite plugin can:\n- moderate text: the moderation endpoint is a tool you can use to check whether content complies with OpenAI's content policy.\nhttps://beta.openai.com/docs/api-reference/moderations \n\n- edit Text: given a prompt and an instruction, the model will return an edited version of the prompt.\nhttps://beta.openai.com/docs/api-reference/edits\n\n- generate Images: given a prompt, the model will generate a new image.\nhttps://beta.openai.com/docs/api-reference/images\n\n- generate completion: \nAnswer questions based on existing knowledge.\nTranslates difficult text into simpler concepts.\nTranslate text into programmatic commands.\nCreate code to call the Stripe API using natural language.\nCreate tables from long form text by specifying a structure supplying some examples.\nFind the time complexity of a function.\nThis is an advanced prompt for detecting sentiment. It allows you to provide it with a list of status updates and then provide a sentiment for each one.\nExtract keywords from a block of text. \nTurn a product description into ad copy.\nSummarize text by adding a 'tl;dr:' to the end of a text passage. \nThis is a QA-style chatbot that answers questions about language models.\nThis is a basic prompt for detecting sentiment.\nTurn a text description into a color.\nCreates two to three sentence short horror stories from a topic input.\nOpen ended conversation with an AI assistant.\nCreate interview questions.\nTurn a few words into a restaurant review.\nEmulate a text message conversation.\nExtract contact information from a block of text.\nCreate product names from examples words. Influenced by a community prompt.\nClassify items into categories via example.\nTranslates English text into French, Spanish and Japanese.\nCorrects sentences into standard English.\nWrite Email Answer.\n\nNote:\nTo use this plugin, you need to register on the OpenAI dashboard and insert your keys into the plugin. DON'T FORGET! To put in Authorization field word Bearer. Authorization value must look like this Bearer sk-xxxxxx\n\nLink to openai register/login page: https://beta.openai.com/overview",
+    "image": "//s3.amazonaws.com/appforest_uf/f1672836939091x878964703618174200/OpenAI_Logo_%282%29.svg.png",
+    "license": "open_source",
+    "link": "https://zeroqode.com/plugins",
+    "name": " Openai & ChatGPT",
+    "plugin_instructions": "[color=#FF0000]To use this plugin, you need to register on the OpenAI dashboard and insert your keys into the plugin.[url=https://platform.openai.com/account/api-keys][/url][/color]\n\nSpecify Your OpenAi sk key in Plugin Tab:\n\nlink to openai register/login page:\nhttps://beta.openai.com/overview\nDON'T FORGET! To put in Authorization field word Bearer. Authorization value must look like this Bearer sk-xxxxxx\n\nAdd Inputs fields:\n\n- Model Name\n- Tokens\n- Temperature\n- Resolution(for generating Image)\n\n\nStart Action:\n\n- In Workflow specify action for EzOpenAi\n\n\nEnjoy!",
+    "sa_node_version": 14
+}
